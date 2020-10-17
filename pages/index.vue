@@ -31,6 +31,10 @@
           </div>
           <div class="column">
             Japan BugBounty ForumsはバグバウンティやCTF、セキュリティに関する話題について情報共有をするためのグループです。誰でも自由に参加することができます。
+            <hr/>
+            <button class="button is-large is-fullwidth is-black" style="background-color:#7289da" onclick="location.href='https://discord.gg/XP92Zxz'">
+              Join this community
+            </button>
           </div>
         </div>
       </div>

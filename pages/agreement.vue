@@ -24,22 +24,19 @@
       </div>
     </section>
     <section id="description">
-      <div class="container desc-content">
+      <div class="container">
         <h2 class="has-text-centered attention">このフォーラムに参加するためには以下の規約に同意し、違反することのないように注意してください。</h2>
-        <div class="columns">
-          <div class="column is-one-third">
+
+        <div class="columns is-centered part">
+          <div class="column is-9">
             <h1 class="title has-text-centered" style="color:#7289da">参加規約</h1>
-          </div>
-          <div class="column">
-            本規約は、当フォーラムに参加するすべてのユーザ(以下参加者)に適用され、参加者が遵守すべき規約を定めたものです。
+            <p>本規約は、当フォーラムに参加するすべてのユーザ(以下参加者)に適用され、参加者が遵守すべき規約を定めたものです。</p>
           </div>
         </div>
 
-        <div class="columns">
-          <div class="column is-one-third">
+        <div class="columns is-centered part">
+          <div class="column is-9">
             <h1 class="title has-text-centered" style="color:#7289da">禁止事項</h1>
-          </div>
-          <div class="column">
             <ol>
               <li>誹謗中傷や差別的な発言</li>
               <li>スパム・荒らし行為</li>
@@ -54,11 +51,9 @@
           </div>
         </div>
 
-        <div class="columns">
-          <div class="column is-one-third">
+        <div class="columns is-centered part">
+          <div class="column is-9">
             <h1 class="title has-text-centered" style="color:#7289da">免責事項</h1>
-          </div>
-          <div class="column">
             <ul>
               <li>当フォーラムのコンテンツや情報は、参加者が主体的に投稿したものであり、 誤情報や古い情報が掲載される可能性があります。必ずしもその内容の正確性および完全性は保証されていません。また、フォーラムの運営は当該情報に基づいて被ったいかなる損害について、一切責任を負うものではございませんのであらかじめご了承ください。</li>
               <li>当フォーラムから移動された先のホームページ等は、当フォーラムが管理、運営するものではございません。移動先サイトで提供される情報の真偽、サービス等につきましても一切の責任も負いませんのでご了承ください。</li>
@@ -78,17 +73,17 @@ export default {
 </script>
 
 <style>
-.desc-content {
+.part {
   margin: 30px;
 }
 .attention {
-  margin-bottom: 30px;
+  margin: 30px;
   color: #FF0000;
 }
-.desc-content ol {
+.part ol {
   padding: 30px;
 }
-.desc-content li {
+.part li {
   line-height: 2;
   margin-bottom: 15px;
 }
