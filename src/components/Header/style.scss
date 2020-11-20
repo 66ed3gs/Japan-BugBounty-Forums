@@ -1,0 +1,57 @@
+.navbar {
+  font-weight: bold;
+  ::selection {
+    opacity: 0;
+  }
+  
+  @include min-screen($breakpoint-tablet) { /* 1024px- */
+    padding: 10px 4vw 10px 4vw;
+    justify-content: center;
+    align-items: center;
+  }
+  @include max-screen($breakpoint-tablet) { /* -1024px */
+    padding: 0px;
+  }
+
+  .logo {
+    margin: 0px 12px;
+    b {
+      padding-left: 5px;
+      color: $logo_text_color;
+    }
+  }
+  
+  a {
+    color: #4d5156;
+    transition: all 100ms linear;
+    margin: 0px 5px 0px 5px;
+  
+    &:hover, &:focus {
+      color: #4d5156;
+      background-color: #FFF;
+    }
+  
+    @include min-screen($breakpoint-tablet) { /* 1024px- */
+  
+    }
+    @include max-screen($breakpoint-tablet) { /* -1024px */
+      width: 100%;
+      margin: 5px 0px 5px 0px;
+      padding: 12px 30px 12px 30px;
+    }
+  }
+  
+  i {
+    @include min-screen($breakpoint-mobile) { /* 768px- */
+      padding-right: 5px;
+    }
+    @include max-screen($breakpoint-mobile) { /* -768px */
+      padding-right: 8px;
+    }
+  }
+  
+  .site-title {
+    font-size: 1em;
+  }
+  
+}

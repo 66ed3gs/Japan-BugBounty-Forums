@@ -1,0 +1,32 @@
+$border_color: #f5f5f5;
+$border_size: 2px;
+
+$transparent: rgba(255,255,255,0);
+
+// body設定
+$body_background: #FFF;
+$body_text: #14171a;
+$body_font_size: 16px;
+$component_radius: 7px;
+$logo_text_color: #f94e3f;
+
+// レスポンシブ サイズ設定
+$breakpoint-tablet: 1024px;
+$breakpoint-mobile: 768px;
+
+// レスポンシブ関数設定
+@mixin max-screen($break-point) { 
+  @media screen and (max-width: $break-point) {
+    @content;
+  }
+}
+@mixin min-screen($break-point) { 
+  @media screen and (min-width: $break-point) {
+    @content;
+  }
+}
+@mixin screen($break-point-min, $break-point-max) { 
+  @media screen and (min-width: $break-point-min) and (max-width: $break-point-max) {
+    @content;
+  }
+}

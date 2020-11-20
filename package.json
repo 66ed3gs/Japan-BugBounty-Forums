@@ -1,18 +1,21 @@
 {
-  "name": "jp-bugbounty-forums",
-  "version": "1.0.0",
+  "name": "japan-bugbounty-forums",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
+    "dev": "next dev --hostname 0.0.0.0",
+    "build": "rm -rf ./build && NODE_ENV=production next build",
+    "start": "next start -p 8080"
   },
   "dependencies": {
-    "core-js": "^3.6.5",
-    "firebase": "^7.24.0",
-    "firebase-tools": "^8.12.1",
-    "nuxt": "^2.14.6"
-  },
-  "devDependencies": {}
+    "@zeit/next-sass": "^1.0.1",
+    "aws-sdk": "^2.795.0",
+    "axios": "^0.21.0",
+    "moment": "^2.29.1",
+    "next": "10.0.1",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-twemoji": "^0.3.0",
+    "sass": "^1.29.0"
+  }
 }
